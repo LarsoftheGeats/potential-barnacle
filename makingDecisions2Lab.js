@@ -211,3 +211,20 @@ switch(letterGrade){
 */
 
 //Code Here
+let divisible=false;
+for (let i =0; i <= 100; i++){
+  message="";
+  divisible=false;
+  if ( i%3 === 0 ){
+    message = message + "Dev"
+    divisible = true;
+  }
+  if ( i%5 === 0){
+    message = message + "mountain"
+    divisible = true;
+  }
+  if (!divisible){
+    message = i;
+  }
+  console.log(message)
+}
